@@ -28,6 +28,7 @@ nav{
     top: 5px;
     left: 220px;
     width: 24em;
+    z-index: 2;
 }
 .navlist{
     font-size: 20px;
@@ -147,11 +148,15 @@ nav{
 
 footer  {
     display: block;
+    position: relative;
+    top: 710px;
+    height: 105px;
+    background-color: rgba(56, 50, 50, 0.5);
 }
 footer .footer{
     display: inline;
     position: relative;
-    top: -11px;
+    top: 30px;
     
     left: 490px;
 }
@@ -160,7 +165,7 @@ footer .footimg
 {
     display: inline;
     position:relative;
-    top: -42px;
+    top: 5px;
     left: 260px;
 
     overflow: hidden;

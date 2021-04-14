@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title My Blog
+
+		link(rel="stylesheet", href="/css/main.css")
+		link(rel="preconnect" href="https://fonts.gstatic.com")
+		link(href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet")
+		block style 
+	body
+		nav
+			.navbar
+				ul.nav
+					li.navlist
+						a(href="/") Home
+					li.navlist
+						a(href="/blogs") Blogs
+					li.navlist
+						a(href="/") About Us
+					li#drop
+						a(href="/")#navdrop Profile&dtrif;
+							.dropdown
+								ul.drop
+									li.droplist
+										a(href= "/") My Blogs
+									li.droplist
+										a(href="/") Account
+									li.droplist
+										a(href="/") Sign Up
+									li.droplist
+										a(href="/") Get Premium
+		
+		.addbutton
+			a(href="/input")| +
+
+		.logo
+			a(href="/")
+				img(src="/logo/logo1.png", alt="logo")
+	
+		
+			
+		block content 
+		
+
+		footer
+			.footer
+				| &copy;myblogs.com ||  This Project Is On Github.
+			.footimg
+				a(href="https://github.com" target="_blank") 
+					img(src="/logo/git.png", alt="github")

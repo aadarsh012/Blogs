@@ -1,0 +1,115 @@
+
+.form {
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: 75px;
+    left: 428px;
+    height: 26em;
+    width: 30em;
+    text-align: center;
+    align-items: center;
+    background-color:rgb(209, 205, 125);
+    z-index: 1;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 2px rgb(0, 0, 0);
+    animation: form 0.5s ease-out forwards;
+}
+@keyframes form{
+    0%{
+        transform: translateY(-500px);
+    }
+    100%{
+        transform: translateY(60px);
+    }
+}
+h1{
+    position: relative;
+    top: 25px;
+    color: rgb(117, 0, 10);
+    animation: colour 0.5s ease-in-out infinite both;
+}
+@keyframes colour{
+    0%{
+        color: rgb(117, 0, 10);
+    }
+    25%{
+        color: rgb(63, 0, 0);
+    }
+    50%{
+        color: rgb(0, 117, 59);
+    }
+    75%{
+        color: rgb(73, 137, 221);
+    }
+    100%{
+        color: rgb(0, 174, 255);
+    }
+}
+.title{
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+input{
+    position: relative;
+    height: 25px;
+    width: 360px;
+    outline: none;
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+   
+}
+#img{
+    position: relative;
+    top: 165px;
+
+}
+#title{
+    position: relative;
+    top: 95px;
+}
+.title{
+    font-size: 25px;
+    position: relative;
+    top: 75px;
+}
+.img{
+    font-size: 25px;
+    position: relative;
+    top: 145px;
+    
+}
+
+.submit{
+    position: relative;
+    top: 190px;
+   
+}
+.submit button{
+    height: 35px;
+    width: 130px;
+    border-radius: 5px;
+    background-color: rgb(78, 9, 9);
+    cursor: pointer;
+    font-size: 20px;
+    color: lavender;
+}
+.submit button:hover{
+    box-shadow: 0 0 5px 2px grey;
+}
+
+.bg{
+    display: flex;
+    position: relative;
+    top: 0px;
+    height: 50em;
+}
+.bg img{
+    position: relative;
+    top: -46px;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+}

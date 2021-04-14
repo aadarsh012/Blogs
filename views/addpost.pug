@@ -1,0 +1,23 @@
+extends index.pug
+block style
+    link(rel="stylesheet", href="/css/addpost.css")
+block content
+    .form
+        h1 Add Your Posts Here!!
+        form(action="/", method="post")
+            .title
+                h3 Enter title:
+            .input
+                input(type="text")#title
+            .img
+                h3 Image Link:
+            .input
+                input(type="text")#img
+            .submit
+                button(type="submit") Add Post
+    .bg
+        img(src="/bg/bg.jpg", alt="bg" )
+            
+                
+
+        

@@ -40,6 +40,12 @@ nav{
     color:  rgb(209, 205, 125);
     cursor: pointer;
 }
+.active{
+    color: rgb(209, 205, 125);
+}
+.addbutton .active{
+    color: rgb(221, 89, 48);
+}
 #drop{
     width: 75px;
     font-size: 20px;

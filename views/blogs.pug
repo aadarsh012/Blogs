@@ -2,9 +2,19 @@ extends index.pug
 
 block style
      link(rel="stylesheet", href="/css/home.css")
+     link(rel="stylesheet", href="/css/blogs.css")
 
 block content 
     
     .container
-        .blog1
-            h2 first blog
+        each blog in blogs
+            .blog
+            
+                header.title #{blog.tit}
+                    
+                .image
+                    img(src= blog.img , alt="")
+
+
+                
+            

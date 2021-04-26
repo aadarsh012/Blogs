@@ -3,7 +3,7 @@ html(lang="en")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		title My Blog
+		title #{pageTitle}
 
 		link(rel="stylesheet", href="/css/main.css")
 		link(rel="preconnect" href="https://fonts.gstatic.com")
@@ -14,11 +14,11 @@ html(lang="en")
 			.navbar
 				ul.nav
 					li.navlist
-						a(href="/") Home
+						a(href="/" class = (path=='/' ? 'active':'')) Home
 					li.navlist
-						a(href="/blogs") Blogs
+						a(href="/blogs" class = (path=='/blogs' ? 'active':'')) Blogs
 					li.navlist
-						a(href="/") About Us
+						a(href="/" ) About Us
 					li#drop
 						a(href="/")#navdrop Profile&dtrif;
 							.dropdown
@@ -33,7 +33,7 @@ html(lang="en")
 										a(href="/") Get Premium
 		
 		.addbutton
-			a(href="/input")| +
+			a(href="/input" class = (path=='/input' ? 'active':''))| +
 
 		.logo
 			a(href="/")
@@ -50,3 +50,5 @@ html(lang="en")
 			.footimg
 				a(href="https://github.com" target="_blank") 
 					img(src="/logo/git.png", alt="github")
+
+	script(src="/script/home.js")
